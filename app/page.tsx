@@ -1,13 +1,19 @@
 import { Client } from "@/components/client";
-import { kv } from "@vercel/kv";
+import { Count } from "@/components/count";
+
 import Link from "next/link";
+import { Suspense } from "react";
 
 export default async function Home() {
-  const views = await kv.get<number>("views");
-
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center gap-8">
-      <span>Count {views}</span>
+      <div>
+        <span>Count </span>
+
+        <Suspense>
+          <Count />
+        </Suspense>
+      </div>
 
       <Client />
 
