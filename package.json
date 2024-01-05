@@ -1,32 +1,30 @@
 {
   "name": "vercel-kv-redis-starter",
-  "repository": "https://github.com/vercel/examples.git",
-  "license": "MIT",
   "version": "0.0.0",
   "private": true,
+  "repository": "https://github.com/vercel/examples.git",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
   },
   "dependencies": {
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.37",
-    "@types/react-dom": "18.0.11",
-    "@vercel/kv": "0.2.1",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
+    "@vercel/kv": "1.0.1",
     "next": "14.0.4",
-    "postcss": "8.4.22",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.1",
-    "typescript": "5.3.3"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/ms": "^0.7.31",
-    "turbo": "^1.9.3"
+    "@types/node": "20.10.6",
+    "@types/react": "18.2.46",
+    "@types/react-dom": "18.2.18",
+    "autoprefixer": "10.4.16",
+    "eslint": "8.56.0",
+    "eslint-config-next": "14.0.4",
+    "postcss": "8.4.33",
+    "tailwindcss": "3.4.0",
+    "typescript": "5.3.3"
   }
 }
